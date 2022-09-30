@@ -7,7 +7,7 @@ public class jenken_class {
 
 		@Test
 		public void Created() {
-			System.out.println("smoke1");
+			Reporter.log("smoke");
 		}
 		@Test
 		public void Created1() {
