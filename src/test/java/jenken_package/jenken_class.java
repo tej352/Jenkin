@@ -9,5 +9,9 @@ public class jenken_class {
 		public void Created() {
 			System.out.println("smoke1");
 		}
+		@Test
+		public void Created1() {
+			System.out.println("smoke1");
+		}
 }
 }
