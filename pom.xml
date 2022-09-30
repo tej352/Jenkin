@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>tyss.com</groupId>
-  <artifactId>Sample</artifactId>
+  <groupId>SampleGithub</groupId>
+  <artifactId>GithubPractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>
+<dependencies>
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
@@ -16,6 +16,7 @@
     <artifactId>selenium-java</artifactId>
     <version>4.1.1</version>
 </dependency>
+
   <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
     <groupId>org.apache.poi</groupId>
@@ -34,7 +35,7 @@
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.28</version>
 </dependency>
-  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+ <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
@@ -56,5 +57,20 @@
 </dependency>
 
 </dependencies>
-
-</project>
+<build>
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.10.1</version>
+<configuration>
+<verbose>true</verbose>
+<fork>true</fork>
+<executable>C:\Program Files\Java\jdk-11.0.5\bin\javac</executable>
+  <source>11</source>
+  <target>11</target>
+</configuration>
+</plugin>
+</plugins>
+ </build>
+   </project>
